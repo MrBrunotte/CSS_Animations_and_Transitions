@@ -1,0 +1,40 @@
+/* 
+    TRANSITIONS timing function CHALLANGE
+1) Change the background color of the box to the red #e84610 after 1s
+2) The transition should take 1 second and the timing function should be set to ease-in-out
+*/
+
+.box {
+    height: 50px;
+    width: 50px;
+    background-color: #000;
+    transition-property: width, background-color; /*To make the transition go both ways we put this in the .box class and not the .box:hover clas */
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.box:hover {
+    width: 150px;
+    background-color: #e84610; /* red */
+}
+
+
+/* 
+    TRANSITIONS CHALLANGE
+1) When hovered a link should change color to the black: #000
+2) Transition speed should be set to 1 second, and transition-timing-function should be ease-in-out
+3) Transition should be triggered by hover 
+*/
+
+ /*not the a is NOT a class therefore no . before a */
+
+a {
+    color: #e84610;
+    font-size: 40px;
+    text-decoration: none;
+    transition: color 2s ease-in-out;
+}
+a:hover {
+    color: #000;    /* black */
+    
+}
